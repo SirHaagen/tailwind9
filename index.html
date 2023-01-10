@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/style.css">
+  <title>NAVBAR WITH TAILWIND CSS</title>
+</head>
+
+<body>
+
+  <nav class=" w-screen p-4 bg-cyan-500 text-white flex justify-between flex-wrap select-none">
+
+    <div class="w-auto flex items-center cursor-pointer">
+      <svg class="w-10" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"><title>file_type_tailwind</title><path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z" style="fill:#ffffff"></path></g></svg>
+      <span class="font-bold pl-1 hidden mini:block">Tailwind CSS</span>
+    </div>
+
+    <div class="hamburger w-8 self-center border-white border-2 rounded-md cursor-pointer || md:hidden">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"> <rect width="48" height="48" fill="white" fill-opacity="0.01"></rect> <path d="M7.94977 11.9498H39.9498" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M7.94977 23.9498H39.9498" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M7.94977 35.9498H39.9498" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+    </div>
+
+    <div class="menu w-screen mt-4 bg-cyan-500 text-center font-light border-t-2 hidden || md:w-max md:flex md:items-center md:gap-6 md:mt-0 md:border-none md:mr-20">
+      <ul class="md:flex md:flex-row md:gap-6 md:justify-center">
+        <li><a class="block mt-4 hover:font-bold duration-100 md:mt-0 md:w-[80px]" href="#">Docs</a></li>
+        <li><a class="block hover:font-bold duration-100 md:w-[80px]" href="#">Examples</a></li>
+        <li><a class="block hover:font-bold duration-100 md:w-[80px]" href="#">Blog</a></li>
+      </ul>
+      <button class="font-semibold my-3 px-2 border-2 rounded-lg hover:bg-white hover:text-cyan-500 hover:shadow-md hover:shadow-white duration-200 || md:my-0">Download</button>
+    </div>
+
+  </nav>
+
+  <script src="./src/js/navbar.js"></script>
+</body>
+
+</html>
